@@ -1,0 +1,29 @@
+release_mode = false
+
+log_level = "DEBUG"
+
+session_store = "REDIS"
+
+cache_store = "REDIS"
+
+[app]
+name = "MM Echo Web"
+
+[server]
+graceful = true
+addr = ":8080"
+
+domain_api = "api.mm.com"
+domain_web = "www.mm.com"
+domain_socket = "socket.mm.com"
+
+[database]
+name = "djangodb"
+user_name = "www"
+pwd  = "/n6V8QCAKjo="
+host = "192.168.41.68"
+port = "3306"
+
+[redis]
+server = "192.168.0.44:6379"
+pwd = ""
